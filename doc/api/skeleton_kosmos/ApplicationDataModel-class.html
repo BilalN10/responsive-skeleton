@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the ApplicationDataModel class from the skeleton_kosmos library, for the Dart programming language.">
+  <title>ApplicationDataModel class - skeleton_kosmos library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">skeleton_kosmos</a></li>
+    <li><a href="../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+    <li class="self-crumb">ApplicationDataModel<span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></span>&gt;</span> class</li>
+  </ol>
+  <div class="self-name">ApplicationDataModel</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">ApplicationDataModel&lt;<wbr><span class="type-parameter">T extends UserModel</span>&gt;</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+    <span class="category model cp-1 linked" title="This is part of the Model Topic."><a href="../topics/Model-topic.html">Model</a></span>
+</h1></div>
+
+    
+
+
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="ApplicationDataModel" class="callable">
+          <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/ApplicationDataModel.html">ApplicationDataModel</a></span><span class="signature">(<span class="parameter" id="-param-userTypeProvider">{<span>required</span> <span class="type-annotation">T</span> <span class="parameter-name">userTypeProvider</span>, </span><span class="parameter" id="-param-userConstructorProvider"><span>required</span> <span class="type-annotation">T</span> <span class="parameter-name">userConstructorProvider</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span></span>), </span><span class="parameter" id="-param-dashboardInitialiser"><span class="type-annotation">dynamic</span> <span class="parameter-name">dashboardInitialiser</span>(<span class="parameter" id="param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span><span class="parameter" id="param-ref"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/WidgetRef-class.html">WidgetRef</a></span> <span class="parameter-name">ref</span></span>)?, </span><span class="parameter" id="-param-dashboardInitialiserWithUserData"><span class="type-annotation">dynamic</span> <span class="parameter-name">dashboardInitialiserWithUserData</span>(<span class="parameter" id="param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span><span class="parameter" id="param-ref"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/WidgetRef-class.html">WidgetRef</a></span> <span class="parameter-name">ref</span></span>)?, </span><span class="parameter" id="-param-appLogo"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">appLogo</span>, </span><span class="parameter" id="-param-appTitle"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">appTitle</span>, </span><span class="parameter" id="-param-mainRoute"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">mainRoute</span> = <span class="default-value">&quot;&#47;&quot;</span>, </span><span class="parameter" id="-param-mainRouteName"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">mainRouteName</span>, </span><span class="parameter" id="-param-noConnexionRoute"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">noConnexionRoute</span>, </span><span class="parameter" id="-param-noConnexionRouteName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">noConnexionRouteName</span>, </span><span class="parameter" id="-param-profilRoute"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">profilRoute</span> = <span class="default-value">&quot;&#47;dashboard&#47;profile&#47;settings&quot;</span>, </span><span class="parameter" id="-param-profilRouteName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">profilRouteName</span> = <span class="default-value">&quot;SettingsRoute&quot;</span>, </span><span class="parameter" id="-param-enableProfil"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableProfil</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-appLogoReverse"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">appLogoReverse</span>, </span><span class="parameter" id="-param-contactEmail"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">contactEmail</span>, </span><span class="parameter" id="-param-contactPhone"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">contactPhone</span>, </span><span class="parameter" id="-param-logoFormat"><span class="type-annotation"><a href="../skeleton_kosmos/SmartImageType.html">SmartImageType</a></span> <span class="parameter-name">logoFormat</span> = <span class="default-value">SmartImageType.svg</span>, </span><span class="parameter" id="-param-facebookUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">facebookUrl</span>, </span><span class="parameter" id="-param-instagramUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">instagramUrl</span>, </span><span class="parameter" id="-param-twitterUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">twitterUrl</span>, </span><span class="parameter" id="-param-supportedLocales"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ui/Locale-class.html">Locale</a></span>&gt;</span></span> <span class="parameter-name">supportedLocales</span> = <span class="default-value">const [Locale(&quot;fr&quot;, &quot;FR&quot;)]</span>, </span><span class="parameter" id="-param-defaultLocale"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Locale-class.html">Locale</a></span> <span class="parameter-name">defaultLocale</span> = <span class="default-value">const Locale(&quot;fr&quot;, &quot;FR&quot;)</span>, </span><span class="parameter" id="-param-maxPhoneWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">maxPhoneWidth</span> = <span class="default-value">800</span>, </span><span class="parameter" id="-param-maxTabletWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">maxTabletWidth</span> = <span class="default-value">1200</span>, </span><span class="parameter" id="-param-maxWebWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">maxWebWidth</span> = <span class="default-value">2400</span>, </span><span class="parameter" id="-param-maxWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">maxWidth</span> = <span class="default-value">double.infinity</span>, </span><span class="parameter" id="-param-designSize"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">designSize</span> = <span class="default-value">const Size(375, 812)</span>, </span><span class="parameter" id="-param-firebaseIsEnabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">firebaseIsEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-firebaseOptions"><span class="type-annotation"><a href="https://pub.dev/documentation/firebase_core_platform_interface/4.5.0/firebase_core_platform_interface/FirebaseOptions-class.html">FirebaseOptions</a>?</span> <span class="parameter-name">firebaseOptions</span>, </span><span class="parameter" id="-param-userCollectionPath"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userCollectionPath</span> = <span class="default-value">&quot;users&#47;&quot;</span>, </span><span class="parameter" id="-param-requestTimeout"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">requestTimeout</span> = <span class="default-value">const Duration(seconds: 60)</span>, </span><span class="parameter" id="-param-clearUserSessionOnDebugMode"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">clearUserSessionOnDebugMode</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-firebaseFunctionsUri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">firebaseFunctionsUri</span>, </span><span class="parameter" id="-param-stripePublishableKey"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">stripePublishableKey</span>, </span><span class="parameter" id="-param-defaultApiPath"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">defaultApiPath</span> = <span class="default-value">&quot;&#47;stripeApi&quot;</span>, </span><span class="parameter" id="-param-defaultWebhooksPath"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">defaultWebhooksPath</span> = <span class="default-value">&quot;&#47;stripeWebhooks&quot;</span>, </span><span class="parameter" id="-param-gmapKey"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">gmapKey</span>, </span><span class="parameter" id="-param-algoliaApplicationId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">algoliaApplicationId</span>, </span><span class="parameter" id="-param-algoliaKey"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">algoliaKey</span>, </span><span class="parameter" id="-param-applicationConfig"><span class="type-annotation"><a href="../skeleton_kosmos/AppConfigModel-class.html">AppConfigModel</a></span> <span class="parameter-name">applicationConfig</span> = <span class="default-value">const AppConfigModel()</span>}</span>)</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">const</div>
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="algoliaApplicationId" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/algoliaApplicationId.html">algoliaApplicationId</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  ID de l'application sur algolia.
+@Required (only if algolia is used)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="algoliaKey" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/algoliaKey.html">algoliaKey</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Clé de l'api Algolia.
+@Required (only if algolia is used)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="applicationConfig" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/applicationConfig.html">applicationConfig</a></span>
+  <span class="signature">&#8594; <a href="../skeleton_kosmos/AppConfigModel-class.html">AppConfigModel</a></span> 
+
+</dt>
+<dd>
+  Consiguration de l'interface du skeleton.
+@Default: const AppConfigModel()
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="appLogo" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/appLogo.html">appLogo</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Logo de l'application.
+@Required
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="appLogoReverse" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/appLogoReverse.html">appLogoReverse</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Second logo de l'application.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="appTitle" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/appTitle.html">appTitle</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Titre de l'application.
+@Required
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="clearUserSessionOnDebugMode" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/clearUserSessionOnDebugMode.html">clearUserSessionOnDebugMode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Deconnect l'utilisateur à chaque restart (unqiuement en Debug).
+@default: 'false'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="contactEmail" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/contactEmail.html">contactEmail</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Email du contact de l'application.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="contactPhone" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/contactPhone.html">contactPhone</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Numéro de téléphone du contact de l'application.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="dashboardInitialiser" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/dashboardInitialiser.html">dashboardInitialiser</a></span>
+  <span class="signature">&#8594; (dynamic Function?<span class="signature">(<span class="parameter" id="param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span><span class="parameter" id="param-ref"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/WidgetRef-class.html">WidgetRef</a></span> <span class="parameter-name">ref</span></span>)</span>?)</span> 
+
+</dt>
+<dd>
+  Callback vous permettant d'initialiser différentes providers, widgets, models.. en meme temps que le chargement de la page et de l'utilisateur.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="dashboardInitialiserWithUserData" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/dashboardInitialiserWithUserData.html">dashboardInitialiserWithUserData</a></span>
+  <span class="signature">&#8594; (dynamic Function?<span class="signature">(<span class="parameter" id="param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span><span class="parameter" id="param-ref"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/WidgetRef-class.html">WidgetRef</a></span> <span class="parameter-name">ref</span></span>)</span>?)</span> 
+
+</dt>
+<dd>
+  Callback vous permettant d'initialiser différentes providers, widgets, models.. dès que les données utilisateurs sont chargés.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="defaultApiPath" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/defaultApiPath.html">defaultApiPath</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Path de la cloud function pour l'api stripe.
+@Default: "/stripeApi"
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="defaultLocale" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/defaultLocale.html">defaultLocale</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-ui/Locale-class.html">Locale</a></span> 
+
+</dt>
+<dd>
+  Langue par défaut de l'application.
+@Default: const <a href="https://api.flutter.dev/flutter/dart-ui/Locale-class.html">Locale("fr", "FR")</a>
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="defaultWebhooksPath" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/defaultWebhooksPath.html">defaultWebhooksPath</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Path de la cloud function pour le Webhooks Stripe.
+@Default: "/stripeWebhooks"
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="designSize" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/designSize.html">designSize</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-ui/Size-class.html">Size</a></span> 
+
+</dt>
+<dd>
+  Size du design de l'application (uniquement mobile).
+@Default: Size(375, 812) (equal to majority of Victor's design)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="enableProfil" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/enableProfil.html">enableProfil</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  L'utilisateur a une page profil
+@Default: 'true
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="facebookUrl" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/facebookUrl.html">facebookUrl</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Lien de la page Facebook du projet.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="firebaseFunctionsUri" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/firebaseFunctionsUri.html">firebaseFunctionsUri</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Url des cloud functions.
+@Required (only if cloud functions is used)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="firebaseIsEnabled" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/firebaseIsEnabled.html">firebaseIsEnabled</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Fierbase est utilisé dans l'application.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="firebaseOptions" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/firebaseOptions.html">firebaseOptions</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/firebase_core_platform_interface/4.5.0/firebase_core_platform_interface/FirebaseOptions-class.html">FirebaseOptions</a>?</span> 
+
+</dt>
+<dd>
+  Firebase configuration.
+@Required (only for web)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="gmapKey" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/gmapKey.html">gmapKey</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Clé de l'api Google Maps.
+@Required (only if google maps is used)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="instagramUrl" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/instagramUrl.html">instagramUrl</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Lien de la page Instagram du projet.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="logoFormat" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/logoFormat.html">logoFormat</a></span>
+  <span class="signature">&#8594; <a href="../skeleton_kosmos/SmartImageType.html">SmartImageType</a></span> 
+
+</dt>
+<dd>
+  Format du / des logo(s).
+@Default : <a href="../skeleton_kosmos/SmartImageType.html">SmartImageType.svg</a>
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="mainRoute" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/mainRoute.html">mainRoute</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Route principal de l'application
+@Required
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="mainRouteName" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/mainRouteName.html">mainRouteName</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Nom de la route principale de l'application
+@Required
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="maxPhoneWidth" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/maxPhoneWidth.html">maxPhoneWidth</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Largeur maximum pour l'UI téléphone.
+@Default: 538 (equal to LG G5, bigger phone)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="maxTabletWidth" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/maxTabletWidth.html">maxTabletWidth</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Largeur maximum pour l'UI tablette.
+@Default: 1024 (equal to Ipad Pro 12.9")
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="maxWebWidth" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/maxWebWidth.html">maxWebWidth</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Largeur maximum pour l'UI ordinateur.
+@Default: 2400 (equal to Desktop)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="maxWidth" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/maxWidth.html">maxWidth</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Taille maximum des UI de l'application.
+@Default: <a href="https://api.flutter.dev/flutter/dart-core/double/infinity-constant.html">double.infinity</a>
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="noConnexionRoute" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/noConnexionRoute.html">noConnexionRoute</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Route par défaut des pages ne nécéssitant pas d'authentification (uniquement utilisé par <a href="../skeleton_kosmos/AppConfigModel/enableNoConnexion.html">AppConfigModel.enableNoConnexion</a>).
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="noConnexionRouteName" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/noConnexionRouteName.html">noConnexionRouteName</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Nom de la route par défaut des pages ne nécéssitant pas d'authentification (uniquement utilisé par <a href="../skeleton_kosmos/AppConfigModel/enableNoConnexion.html">AppConfigModel.enableNoConnexion</a>).
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="profilRoute" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/profilRoute.html">profilRoute</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Route du profil utilisateur.
+@Default: '"/dashboard/profile/settings"'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="profilRouteName" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/profilRouteName.html">profilRouteName</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Nom de la route du profil utilisateur.
+@Default: '"SettingsRoute"'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="requestTimeout" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/requestTimeout.html">requestTimeout</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Duration-class.html">Duration</a></span> 
+
+</dt>
+<dd>
+  Durée de TimeOut pour les requêtes HTTP.
+@Default: Duration(seconds: 60)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="stripePublishableKey" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/stripePublishableKey.html">stripePublishableKey</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Clé Stripe.
+@Required (only if stripe is used)
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="supportedLocales" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/supportedLocales.html">supportedLocales</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ui/Locale-class.html">Locale</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  Liste des langages supportés par l'application.
+/!\ Les langues doivent avoir leur fichier de traduction dans le dossier '''assets/translations/''' de l'application.
+@Default: const <code>Locale("fr", "FR")</code>
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="twitterUrl" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/twitterUrl.html">twitterUrl</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  Lien de la page Twitter du projet.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="userCollectionPath" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/userCollectionPath.html">userCollectionPath</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  Nom de la collection ou sont stockés les données utilisateurs.
+@Default: "users"
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="userConstructorProvider" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/userConstructorProvider.html">userConstructorProvider</a></span>
+  <span class="signature">&#8594; T Function<span class="signature">(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span></span>)</span></span> 
+
+</dt>
+<dd>
+  Constructeur 'fromJson' de votre utilisateur (uniquement si vous avez ovveride '''UserModel'''), par défaut vous devez mettre '''UserModel.fomJson'''.
+@Required
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="userTypeProvider" class="property">
+  <span class="name"><a href="../skeleton_kosmos/ApplicationDataModel/userTypeProvider.html">userTypeProvider</a></span>
+  <span class="signature">&#8594; T</span> 
+
+</dt>
+<dd>
+  Type de votre utilisateur (uniquement si vous avez ovveride '''UserModel'''), par défaut vous devez mettre '''UserModel'''.
+@Required
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">skeleton_kosmos</a></li>
+  <li><a href="../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+  <li class="self-crumb">ApplicationDataModel<span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></span>&gt;</span> class</li>
+</ol>
+
+
+    <h5>skeleton_kosmos library</h5>
+    <ol>
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#classes">Classes</a></li>
+  <li><a href="../skeleton_kosmos/AlreadyLoggedGuard-class.html">AlreadyLoggedGuard</a></li>
+  <li><a href="../skeleton_kosmos/AppConfigModel-class.html">AppConfigModel</a></li>
+  <li><a href="../skeleton_kosmos/ApplicationDataModel-class.html">ApplicationDataModel</a></li>
+  <li><a href="../skeleton_kosmos/AuthenticationPageThemeData-class.html">AuthenticationPageThemeData</a></li>
+  <li><a href="../skeleton_kosmos/BasicWebParentPage-class.html">BasicWebParentPage</a></li>
+  <li><a href="../skeleton_kosmos/CgvuPage-class.html">CgvuPage</a></li>
+  <li><a href="../skeleton_kosmos/ClampingPage-class.html">ClampingPage</a></li>
+  <li><a href="../skeleton_kosmos/CompleteProfilPopup-class.html">CompleteProfilPopup</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountPage-class.html">CreateAccountPage</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountProvider-class.html">CreateAccountProvider</a></li>
+  <li><a href="../skeleton_kosmos/CustomCard-class.html">CustomCard</a></li>
+  <li><a href="../skeleton_kosmos/CustomCardThemeData-class.html">CustomCardThemeData</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelList-class.html">CustomExpansionPanelList</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelListThemeData-class.html">CustomExpansionPanelListThemeData</a></li>
+  <li><a href="../skeleton_kosmos/DashboardPage-class.html">DashboardPage</a></li>
+  <li><a href="../skeleton_kosmos/DashboardProvider-class.html">DashboardProvider</a></li>
+  <li><a href="../skeleton_kosmos/FirestoreUtils-class.html">FirestoreUtils</a></li>
+  <li><a href="../skeleton_kosmos/ForgotPasswordPage-class.html">ForgotPasswordPage</a></li>
+  <li><a href="../skeleton_kosmos/ImageWithSmartFormat-class.html">ImageWithSmartFormat</a></li>
+  <li><a href="../skeleton_kosmos/ItemLinkHelper-class.html">ItemLinkHelper</a></li>
+  <li><a href="../skeleton_kosmos/LaunchApplication-class.html">LaunchApplication</a></li>
+  <li><a href="../skeleton_kosmos/LinkItem-class.html">LinkItem</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemThemeData-class.html">LinkItemThemeData</a></li>
+  <li><a href="../skeleton_kosmos/LoginGuard-class.html">LoginGuard</a></li>
+  <li><a href="../skeleton_kosmos/LoginPage-class.html">LoginPage</a></li>
+  <li><a href="../skeleton_kosmos/LoginWithPhonePage-class.html">LoginWithPhonePage</a></li>
+  <li><a href="../skeleton_kosmos/LogoutGuard-class.html">LogoutGuard</a></li>
+  <li><a href="../skeleton_kosmos/LogoutPage-class.html">LogoutPage</a></li>
+  <li><a href="../skeleton_kosmos/ModifyEmailDataNode-class.html">ModifyEmailDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPasswordDataNode-class.html">ModifyPasswordDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPersonnalDataNode-class.html">ModifyPersonnalDataNode</a></li>
+  <li><a href="../skeleton_kosmos/NavigationSidebarThemeData-class.html">NavigationSidebarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/OpenableContainer-class.html">OpenableContainer</a></li>
+  <li><a href="../skeleton_kosmos/PrincipalData-class.html">PrincipalData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilButtonThemeData-class.html">ProfilButtonThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilePage-class.html">ProfilePage</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBar-class.html">ResponsiveAppBar</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBarThemeData-class.html">ResponsiveAppBarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveSettingsPage-class.html">ResponsiveSettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/ScaffoldWithLogo-class.html">ScaffoldWithLogo</a></li>
+  <li><a href="../skeleton_kosmos/ScrollingPage-class.html">ScrollingPage</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNode-class.html">SettingsNode</a></li>
+  <li><a href="../skeleton_kosmos/SettingsPage-class.html">SettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifEmail-class.html">SwicthNotifEmail</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifPush-class.html">SwicthNotifPush</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifSms-class.html">SwicthNotifSms</a></li>
+  <li><a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></li>
+  <li><a href="../skeleton_kosmos/UserProvider-class.html">UserProvider</a></li>
+  <li><a href="../skeleton_kosmos/VerificationEmailSendPage-class.html">VerificationEmailSendPage</a></li>
+  <li><a href="../skeleton_kosmos/WebParentCore-class.html">WebParentCore</a></li>
+
+
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#properties">Properties</a></li>
+  <li><a href="../skeleton_kosmos/userChangeNotifierProvider.html">userChangeNotifierProvider</a></li>
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#enums">Enums</a></li>
+  <li><a href="../skeleton_kosmos/LoginType.html">LoginType</a></li>
+  <li><a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNodeType.html">SettingsNodeType</a></li>
+  <li><a href="../skeleton_kosmos/SmartImageType.html">SmartImageType</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../skeleton_kosmos/ApplicationDataModel-class.html#constructors">Constructors</a></li>
+          <li><a href="../skeleton_kosmos/ApplicationDataModel/ApplicationDataModel.html">ApplicationDataModel</a></li>
+
+
+    <li class="section-title">
+      <a href="../skeleton_kosmos/ApplicationDataModel-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/algoliaApplicationId.html">algoliaApplicationId</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/algoliaKey.html">algoliaKey</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/applicationConfig.html">applicationConfig</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/appLogo.html">appLogo</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/appLogoReverse.html">appLogoReverse</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/appTitle.html">appTitle</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/clearUserSessionOnDebugMode.html">clearUserSessionOnDebugMode</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/contactEmail.html">contactEmail</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/contactPhone.html">contactPhone</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/dashboardInitialiser.html">dashboardInitialiser</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/dashboardInitialiserWithUserData.html">dashboardInitialiserWithUserData</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/defaultApiPath.html">defaultApiPath</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/defaultLocale.html">defaultLocale</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/defaultWebhooksPath.html">defaultWebhooksPath</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/designSize.html">designSize</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/enableProfil.html">enableProfil</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/facebookUrl.html">facebookUrl</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/firebaseFunctionsUri.html">firebaseFunctionsUri</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/firebaseIsEnabled.html">firebaseIsEnabled</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/firebaseOptions.html">firebaseOptions</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/gmapKey.html">gmapKey</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/instagramUrl.html">instagramUrl</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/logoFormat.html">logoFormat</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/mainRoute.html">mainRoute</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/mainRouteName.html">mainRouteName</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/maxPhoneWidth.html">maxPhoneWidth</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/maxTabletWidth.html">maxTabletWidth</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/maxWebWidth.html">maxWebWidth</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/maxWidth.html">maxWidth</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/noConnexionRoute.html">noConnexionRoute</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/noConnexionRouteName.html">noConnexionRouteName</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/profilRoute.html">profilRoute</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/profilRouteName.html">profilRouteName</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/requestTimeout.html">requestTimeout</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/stripePublishableKey.html">stripePublishableKey</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/supportedLocales.html">supportedLocales</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/twitterUrl.html">twitterUrl</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/userCollectionPath.html">userCollectionPath</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/userConstructorProvider.html">userConstructorProvider</a></li>
+    <li><a href="../skeleton_kosmos/ApplicationDataModel/userTypeProvider.html">userTypeProvider</a></li>
+
+    <li class="section-title inherited"><a href="../skeleton_kosmos/ApplicationDataModel-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../skeleton_kosmos/ApplicationDataModel-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    skeleton_kosmos
+      3.2.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the launch method from the LaunchApplication class, for the Dart programming language.">
+  <title>launch method - LaunchApplication class - skeleton_kosmos library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">skeleton_kosmos</a></li>
+    <li><a href="../../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+    <li><a href="../../skeleton_kosmos/LaunchApplication-class.html">LaunchApplication</a></li>
+    <li class="self-crumb">launch method</li>
+  </ol>
+  <div class="self-name">launch</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">launch</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+<span class="name ">launch</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="launch-param-applicationModel">{<span>required</span> <span class="type-annotation"><a href="../../skeleton_kosmos/ApplicationDataModel-class.html">ApplicationDataModel</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../skeleton_kosmos/UserModel-class.html">UserModel</a></span>&gt;</span></span> <span class="parameter-name">applicationModel</span>, </span></li>
+<li><span class="parameter" id="launch-param-appRouter"><span>required</span> <span class="type-annotation"><a href="https://pub.dev/documentation/auto_route/4.2.1/auto_route/RootStackRouter-class.html">RootStackRouter</a></span> <span class="parameter-name">appRouter</span>, </span></li>
+<li><span class="parameter" id="launch-param-customTheme"><span>@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&quot;customTheme was deprecated from v3.3.0, use initTheme arguments (you can use screenUtil and ResponsiveFramework inside).&quot;)</span> <span class="type-annotation">AppTheme?</span> <span class="parameter-name">customTheme</span>, </span></li>
+<li><span class="parameter" id="launch-param-translationsPath"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">translationsPath</span> = <span class="default-value">&quot;assets&#47;translations&quot;</span>, </span></li>
+<li><span class="parameter" id="launch-param-initTheme"><span class="type-annotation">AppTheme</span> <span class="parameter-name">initTheme</span>(<ol class="parameter-list"><li><span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span></span></li>
+</ol>
+)?}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Lance l'application.</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static Future&lt;void&gt; launch({
+  required ApplicationDataModel applicationModel,
+  required RootStackRouter appRouter,
+  @Deprecated(&quot;customTheme was deprecated from v3.3.0, use initTheme arguments (you can use screenUtil and ResponsiveFramework inside).&quot;) AppTheme? customTheme,
+  String translationsPath = &quot;assets&#47;translations&quot;,
+  AppTheme Function(BuildContext)? initTheme,
+}) async {
+  &#47;&#47;&#47; Be sure all widget and flutter system are initialized
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if (kIsWeb) {
+    setPathUrlStrategy();
+  }
+
+  &#47;&#47;&#47; Ensure Translations is correctly initialized
+  await EasyLocalization.ensureInitialized();
+
+  &#47;&#47;&#47; Register model and data via Get_it package
+  await _registerAppModel(appModel: applicationModel, customTheme: customTheme);
+
+  &#47;&#47;&#47; Initialize services
+  &#47;&#47;&#47; Firebase
+  await _launchFirebaseService(appModel: applicationModel);
+
+  return runApp(
+    ProviderScope(
+      child: EasyLocalization(
+        supportedLocales: applicationModel.supportedLocales,
+        fallbackLocale: applicationModel.defaultLocale,
+        startLocale: applicationModel.defaultLocale,
+        path: translationsPath,
+        child: ScreenUtilInit(
+          child: MainPage(appRouter: appRouter),
+          designSize: applicationModel.designSize,
+          builder: ((context, _) {
+            if (!GetIt.instance.isRegistered&lt;AppTheme&gt;() &amp;&amp; initTheme != null) {
+              GetIt.instance.registerSingleton(initTheme(context));
+            }
+            return ResponsiveWrapper.builder(
+              BouncingScrollWrapper(child: _!),
+              maxWidth: applicationModel.maxWidth,
+              minWidth: 480,
+              breakpoints: [
+                ResponsiveBreakpoint.tag(applicationModel.maxPhoneWidth, name: PHONE),
+                ResponsiveBreakpoint.tag(applicationModel.maxTabletWidth, name: TABLET),
+                ResponsiveBreakpoint.tag(applicationModel.maxWebWidth, name: DESKTOP),
+                ResponsiveBreakpoint.autoScale(applicationModel.maxWidth, name: &quot;MaxWidth&quot;),
+              ],
+            );
+          }),
+        ),
+      ),
+    ),
+  );
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">skeleton_kosmos</a></li>
+  <li><a href="../../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+  <li><a href="../../skeleton_kosmos/LaunchApplication-class.html">LaunchApplication</a></li>
+  <li class="self-crumb">launch method</li>
+</ol>
+
+
+    <h5>LaunchApplication class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../skeleton_kosmos/LaunchApplication-class.html#constructors">Constructors</a></li>
+          <li><a href="../../skeleton_kosmos/LaunchApplication/LaunchApplication.html">LaunchApplication</a></li>
+
+
+    <li class="section-title inherited">
+      <a href="../../skeleton_kosmos/LaunchApplication-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title inherited"><a href="../../skeleton_kosmos/LaunchApplication-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../../skeleton_kosmos/LaunchApplication-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+        <li class="section-title"><a href="../../skeleton_kosmos/LaunchApplication-class.html#static-methods">Static methods</a></li>
+          <li><a href="../../skeleton_kosmos/LaunchApplication/launch.html">launch</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    skeleton_kosmos
+      3.2.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

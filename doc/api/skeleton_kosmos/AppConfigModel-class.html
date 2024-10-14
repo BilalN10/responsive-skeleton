@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the AppConfigModel class from the skeleton_kosmos library, for the Dart programming language.">
+  <title>AppConfigModel class - skeleton_kosmos library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">skeleton_kosmos</a></li>
+    <li><a href="../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+    <li class="self-crumb">AppConfigModel class</li>
+  </ol>
+  <div class="self-name">AppConfigModel</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">AppConfigModel</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+    <span class="category model cp-1 linked" title="This is part of the Model Topic."><a href="../topics/Model-topic.html">Model</a></span>
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Contient les configurations nécessaires pour l'interface du skeleton.</p>
+</section>
+
+
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="AppConfigModel" class="callable">
+          <span class="name"><a href="../skeleton_kosmos/AppConfigModel/AppConfigModel.html">AppConfigModel</a></span><span class="signature">(<span class="parameter" id="-param-showAppBarOnWeb">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showAppBarOnWeb</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-showBottomBarOnWeb"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showBottomBarOnWeb</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-showAppBarOnMobile"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showAppBarOnMobile</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-mobileAppBarBuilder"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/PreferredSizeWidget-class.html">PreferredSizeWidget</a></span> <span class="parameter-name">mobileAppBarBuilder</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/WidgetRef-class.html">WidgetRef</a></span></span>)?, </span><span class="parameter" id="-param-showSideBarOrDrawerOnWeb"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showSideBarOrDrawerOnWeb</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-appBarHaveLogo"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">appBarHaveLogo</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-profilButtonHavePicture"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">profilButtonHavePicture</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-appBarHaveProfilButton"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">appBarHaveProfilButton</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-bottomBarHaveLogo"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">bottomBarHaveLogo</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-bottomBarUseReverseLogo"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">bottomBarUseReverseLogo</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-whereNavigationItem"><span class="type-annotation"><a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition</a></span> <span class="parameter-name">whereNavigationItem</span> = <span class="default-value">NavigationPosition.sidebar</span>, </span><span class="parameter" id="-param-bottomNavigationBarInMobile"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">bottomNavigationBarInMobile</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-navigationItems"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dartz/0.10.1/dartz/Tuple2-class.html">Tuple2</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">navigationItems</span> = <span class="default-value">const []</span>, </span><span class="parameter" id="-param-bottomNavItems"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></span>&gt;</span></span> <span class="parameter-name">bottomNavItems</span> = <span class="default-value">const []</span>, </span><span class="parameter" id="-param-loginFields"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">FieldModel</span>&gt;</span></span> <span class="parameter-name">loginFields</span> = <span class="default-value">const []</span>, </span><span class="parameter" id="-param-loginWithPhoneFields"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">FieldModel</span>&gt;</span></span> <span class="parameter-name">loginWithPhoneFields</span> = <span class="default-value">const []</span>, </span><span class="parameter" id="-param-createAccountFields"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>&gt;</span></span> <span class="parameter-name">createAccountFields</span> = <span class="default-value">const []</span>, </span><span class="parameter" id="-param-typeOfLogin"><span class="type-annotation"><a href="../skeleton_kosmos/LoginType.html">LoginType</a></span> <span class="parameter-name">typeOfLogin</span> = <span class="default-value">LoginType.email</span>, </span><span class="parameter" id="-param-emailMustBeVerified"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">emailMustBeVerified</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-enableConnexionWithPhone"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableConnexionWithPhone</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-enableCreateAccount"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableCreateAccount</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-enableNoConnexion"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableNoConnexion</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-enableForgotPassword"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableForgotPassword</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-showUserImageOnSettings"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showUserImageOnSettings</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-settingsNodes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/SettingsNode-class.html">SettingsNode</a></span>&gt;</span></span> <span class="parameter-name">settingsNodes</span> = <span class="default-value">const []</span>, </span><span class="parameter" id="-param-completeProfilPopup"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">completeProfilPopup</span>, </span><span class="parameter" id="-param-loginCustomPage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">loginCustomPage</span>, </span><span class="parameter" id="-param-appBarOnAuthenticationPage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">appBarOnAuthenticationPage</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-bottomBarOnAuthenticationPage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">bottomBarOnAuthenticationPage</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-onTapProfilButton"><span class="type-annotation">dynamic</span> <span class="parameter-name">onTapProfilButton</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span></span>)?, </span><span class="parameter" id="-param-enableProfilButtonInPhone"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableProfilButtonInPhone</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-logoOnAuthenticationPage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">logoOnAuthenticationPage</span> = <span class="default-value">true</span>}</span>)</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">const</div>
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="appBarHaveLogo" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/appBarHaveLogo.html">appBarHaveLogo</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage du logo (path défini dans <code>ApplicationModel</code>) dans l'appBar (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showAppBarOnWeb.html">showAppBarOnWeb</a> est 'true').
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="appBarHaveProfilButton" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/appBarHaveProfilButton.html">appBarHaveProfilButton</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage d'un <code>ProfilButton</code> dans l'appBar (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showAppBarOnWeb.html">showAppBarOnWeb</a> est 'true').
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="appBarOnAuthenticationPage" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/appBarOnAuthenticationPage.html">appBarOnAuthenticationPage</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Les pages d'authentification possède une <a href="https://api.flutter.dev/flutter/material/AppBar-class.html">AppBar</a>.
+@Default: 'false'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bottomBarHaveLogo" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/bottomBarHaveLogo.html">bottomBarHaveLogo</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage du logo (path défini dans <code>ApplicationModel</code>) dans la bottomBar (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showBottomBarOnWeb.html">showBottomBarOnWeb</a> est 'true' et <a href="../skeleton_kosmos/AppConfigModel/bottomBarUseReverseLogo.html">bottomBarUseReverseLogo</a> est 'false').
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bottomBarOnAuthenticationPage" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/bottomBarOnAuthenticationPage.html">bottomBarOnAuthenticationPage</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Les pages d'authentification possède une <code>BottomBar</code>.
+@Default: 'false'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bottomBarUseReverseLogo" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/bottomBarUseReverseLogo.html">bottomBarUseReverseLogo</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage du second logo (path défini dans <code>ApplicationModel</code>) dans la bottomBar (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showBottomBarOnWeb.html">showBottomBarOnWeb</a> est 'true').
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bottomNavigationBarInMobile" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/bottomNavigationBarInMobile.html">bottomNavigationBarInMobile</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Utilisation d'une <code>bottomNavigationBar</code> en tablette / mobile / application.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bottomNavItems" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/bottomNavItems.html">bottomNavItems</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  List des items de navigation qui sont affichés dans la <code>bottomNavigationBar</code> (uniquement si <a href="../skeleton_kosmos/AppConfigModel/bottomNavigationBarInMobile.html">bottomNavigationBarInMobile</a> est 'true').
+@Default: []
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="completeProfilPopup" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/completeProfilPopup.html">completeProfilPopup</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="createAccountFields" class="property">
+  <span class="name"><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/createAccountFields.html">createAccountFields</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&quot;this will be updated in v3_3_1&quot;), final</div>
+
+</dd>
+
+        <dt id="emailMustBeVerified" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/emailMustBeVerified.html">emailMustBeVerified</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Le mail de l'utilisateur doit être vérifier pour accéder au site.
+@Default: 'false'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="enableConnexionWithPhone" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/enableConnexionWithPhone.html">enableConnexionWithPhone</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  La connexion par téléphone est disponible dans l'application
+@Default: 'false'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="enableCreateAccount" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/enableCreateAccount.html">enableCreateAccount</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  La création de compte est disponible dans l'application
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="enableForgotPassword" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/enableForgotPassword.html">enableForgotPassword</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  L'utilisateur peut réinitiliser son mot de passe.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="enableNoConnexion" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/enableNoConnexion.html">enableNoConnexion</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  L'application possède une / des page(s) ne nécéssitant pas de rediection et un bouton pour y accéder est disponible sur la page de connexion.
+@Default: 'false'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="enableProfilButtonInPhone" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/enableProfilButtonInPhone.html">enableProfilButtonInPhone</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Les applications mobiles ou en ui tablette / mobile possède un <code>ProfilButton</code> (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showAppBarOnMobile.html">showAppBarOnMobile</a> est 'true').
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="loginCustomPage" class="property">
+  <span class="name"><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/loginCustomPage.html">loginCustomPage</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&quot;this will be updated in v3_3_1&quot;), final</div>
+
+</dd>
+
+        <dt id="loginFields" class="property">
+  <span class="name"><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/loginFields.html">loginFields</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">FieldModel</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&quot;this will be updated in v3_3_1&quot;), final</div>
+
+</dd>
+
+        <dt id="loginWithPhoneFields" class="property">
+  <span class="name"><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/loginWithPhoneFields.html">loginWithPhoneFields</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">FieldModel</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&quot;this will be updated in v3_3_1&quot;), final</div>
+
+</dd>
+
+        <dt id="logoOnAuthenticationPage" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/logoOnAuthenticationPage.html">logoOnAuthenticationPage</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affiche le logo de l'application dans les pages d'authentication.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="mobileAppBarBuilder" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/mobileAppBarBuilder.html">mobileAppBarBuilder</a></span>
+  <span class="signature">&#8594; (<a href="https://api.flutter.dev/flutter/widgets/PreferredSizeWidget-class.html">PreferredSizeWidget</a> Function?<span class="signature">(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/WidgetRef-class.html">WidgetRef</a></span></span>)</span>?)</span> 
+
+</dt>
+<dd>
+  Builder permettant de générer une appBar pour les pages du dashboard.
+@Nullable
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="navigationItems" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/navigationItems.html">navigationItems</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dartz/0.10.1/dartz/Tuple2-class.html">Tuple2</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  Items de navigation, la première string étant le type d'utilisateur pour qui les items sont définis.
+Si vous n'avez pas de gestion de type d'utilisateur, vous pouvez utiliser la valeur 'default'.
+@Default: []
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="onTapProfilButton" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/onTapProfilButton.html">onTapProfilButton</a></span>
+  <span class="signature">&#8594; (dynamic Function?<span class="signature">(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span></span>)</span>?)</span> 
+
+</dt>
+<dd>
+  Callback lorsqu'on tape le <code>ProfilButton</code> (uniquement si <a href="../skeleton_kosmos/AppConfigModel/appBarHaveProfilButton.html">appBarHaveProfilButton</a> est 'true' ou <a href="../skeleton_kosmos/AppConfigModel/enableProfilButtonInPhone.html">enableProfilButtonInPhone</a> est 'true').
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="profilButtonHavePicture" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/profilButtonHavePicture.html">profilButtonHavePicture</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage de l'image de profil dans le <code>ProfilButton</code> (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showAppBarOnWeb.html">showAppBarOnWeb</a> est 'true' et <a href="../skeleton_kosmos/AppConfigModel/appBarHaveProfilButton.html">appBarHaveProfilButton</a> est 'true').
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="settingsNodes" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/settingsNodes.html">settingsNodes</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/SettingsNode-class.html">SettingsNode</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  List des settings disponibles dans la page settings.
+@Default: []
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="showAppBarOnMobile" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/showAppBarOnMobile.html">showAppBarOnMobile</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage d'une <code>appBar</code> pour une application mobile ou UI tablette / mobile.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="showAppBarOnWeb" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/showAppBarOnWeb.html">showAppBarOnWeb</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage d'une <code>appBar</code> pour une application web.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="showBottomBarOnWeb" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/showBottomBarOnWeb.html">showBottomBarOnWeb</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage d'une <code>bottomBar</code> pour une application web.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="showSideBarOrDrawerOnWeb" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/showSideBarOrDrawerOnWeb.html">showSideBarOrDrawerOnWeb</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  Affichage d'une <code>sideBar</code> ou d'un <a href="https://api.flutter.dev/flutter/material/Drawer-class.html">Drawer</a> pour une application web.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="showUserImageOnSettings" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/showUserImageOnSettings.html">showUserImageOnSettings</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  L'image de profil de l'utilisateur est visible dans la page settings.
+@Default: 'true'
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="typeOfLogin" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/typeOfLogin.html">typeOfLogin</a></span>
+  <span class="signature">&#8594; <a href="../skeleton_kosmos/LoginType.html">LoginType</a></span> 
+
+</dt>
+<dd>
+  Type de connexion, par défaut <a href="../skeleton_kosmos/LoginType.html">LoginType.email</a>
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="whereNavigationItem" class="property">
+  <span class="name"><a href="../skeleton_kosmos/AppConfigModel/whereNavigationItem.html">whereNavigationItem</a></span>
+  <span class="signature">&#8594; <a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition</a></span> 
+
+</dt>
+<dd>
+  Position des items de navigations dans la <a href="https://api.flutter.dev/flutter/material/AppBar-class.html">AppBar</a> ou dans le <a href="https://api.flutter.dev/flutter/material/Drawer-class.html">Drawer</a> (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showSideBarOrDrawerOnWeb.html">showSideBarOrDrawerOnWeb</a> est 'true') ou dans les deux.
+@Default: <a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition.sidebar</a>
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">skeleton_kosmos</a></li>
+  <li><a href="../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+  <li class="self-crumb">AppConfigModel class</li>
+</ol>
+
+
+    <h5>skeleton_kosmos library</h5>
+    <ol>
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#classes">Classes</a></li>
+  <li><a href="../skeleton_kosmos/AlreadyLoggedGuard-class.html">AlreadyLoggedGuard</a></li>
+  <li><a href="../skeleton_kosmos/AppConfigModel-class.html">AppConfigModel</a></li>
+  <li><a href="../skeleton_kosmos/ApplicationDataModel-class.html">ApplicationDataModel</a></li>
+  <li><a href="../skeleton_kosmos/AuthenticationPageThemeData-class.html">AuthenticationPageThemeData</a></li>
+  <li><a href="../skeleton_kosmos/BasicWebParentPage-class.html">BasicWebParentPage</a></li>
+  <li><a href="../skeleton_kosmos/CgvuPage-class.html">CgvuPage</a></li>
+  <li><a href="../skeleton_kosmos/ClampingPage-class.html">ClampingPage</a></li>
+  <li><a href="../skeleton_kosmos/CompleteProfilPopup-class.html">CompleteProfilPopup</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountPage-class.html">CreateAccountPage</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountProvider-class.html">CreateAccountProvider</a></li>
+  <li><a href="../skeleton_kosmos/CustomCard-class.html">CustomCard</a></li>
+  <li><a href="../skeleton_kosmos/CustomCardThemeData-class.html">CustomCardThemeData</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelList-class.html">CustomExpansionPanelList</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelListThemeData-class.html">CustomExpansionPanelListThemeData</a></li>
+  <li><a href="../skeleton_kosmos/DashboardPage-class.html">DashboardPage</a></li>
+  <li><a href="../skeleton_kosmos/DashboardProvider-class.html">DashboardProvider</a></li>
+  <li><a href="../skeleton_kosmos/FirestoreUtils-class.html">FirestoreUtils</a></li>
+  <li><a href="../skeleton_kosmos/ForgotPasswordPage-class.html">ForgotPasswordPage</a></li>
+  <li><a href="../skeleton_kosmos/ImageWithSmartFormat-class.html">ImageWithSmartFormat</a></li>
+  <li><a href="../skeleton_kosmos/ItemLinkHelper-class.html">ItemLinkHelper</a></li>
+  <li><a href="../skeleton_kosmos/LaunchApplication-class.html">LaunchApplication</a></li>
+  <li><a href="../skeleton_kosmos/LinkItem-class.html">LinkItem</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemThemeData-class.html">LinkItemThemeData</a></li>
+  <li><a href="../skeleton_kosmos/LoginGuard-class.html">LoginGuard</a></li>
+  <li><a href="../skeleton_kosmos/LoginPage-class.html">LoginPage</a></li>
+  <li><a href="../skeleton_kosmos/LoginWithPhonePage-class.html">LoginWithPhonePage</a></li>
+  <li><a href="../skeleton_kosmos/LogoutGuard-class.html">LogoutGuard</a></li>
+  <li><a href="../skeleton_kosmos/LogoutPage-class.html">LogoutPage</a></li>
+  <li><a href="../skeleton_kosmos/ModifyEmailDataNode-class.html">ModifyEmailDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPasswordDataNode-class.html">ModifyPasswordDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPersonnalDataNode-class.html">ModifyPersonnalDataNode</a></li>
+  <li><a href="../skeleton_kosmos/NavigationSidebarThemeData-class.html">NavigationSidebarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/OpenableContainer-class.html">OpenableContainer</a></li>
+  <li><a href="../skeleton_kosmos/PrincipalData-class.html">PrincipalData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilButtonThemeData-class.html">ProfilButtonThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilePage-class.html">ProfilePage</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBar-class.html">ResponsiveAppBar</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBarThemeData-class.html">ResponsiveAppBarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveSettingsPage-class.html">ResponsiveSettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/ScaffoldWithLogo-class.html">ScaffoldWithLogo</a></li>
+  <li><a href="../skeleton_kosmos/ScrollingPage-class.html">ScrollingPage</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNode-class.html">SettingsNode</a></li>
+  <li><a href="../skeleton_kosmos/SettingsPage-class.html">SettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifEmail-class.html">SwicthNotifEmail</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifPush-class.html">SwicthNotifPush</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifSms-class.html">SwicthNotifSms</a></li>
+  <li><a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></li>
+  <li><a href="../skeleton_kosmos/UserProvider-class.html">UserProvider</a></li>
+  <li><a href="../skeleton_kosmos/VerificationEmailSendPage-class.html">VerificationEmailSendPage</a></li>
+  <li><a href="../skeleton_kosmos/WebParentCore-class.html">WebParentCore</a></li>
+
+
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#properties">Properties</a></li>
+  <li><a href="../skeleton_kosmos/userChangeNotifierProvider.html">userChangeNotifierProvider</a></li>
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#enums">Enums</a></li>
+  <li><a href="../skeleton_kosmos/LoginType.html">LoginType</a></li>
+  <li><a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNodeType.html">SettingsNodeType</a></li>
+  <li><a href="../skeleton_kosmos/SmartImageType.html">SmartImageType</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../skeleton_kosmos/AppConfigModel-class.html#constructors">Constructors</a></li>
+          <li><a href="../skeleton_kosmos/AppConfigModel/AppConfigModel.html">AppConfigModel</a></li>
+
+
+    <li class="section-title">
+      <a href="../skeleton_kosmos/AppConfigModel-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/appBarHaveLogo.html">appBarHaveLogo</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/appBarHaveProfilButton.html">appBarHaveProfilButton</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/appBarOnAuthenticationPage.html">appBarOnAuthenticationPage</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/bottomBarHaveLogo.html">bottomBarHaveLogo</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/bottomBarOnAuthenticationPage.html">bottomBarOnAuthenticationPage</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/bottomBarUseReverseLogo.html">bottomBarUseReverseLogo</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/bottomNavigationBarInMobile.html">bottomNavigationBarInMobile</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/bottomNavItems.html">bottomNavItems</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/completeProfilPopup.html">completeProfilPopup</a></li>
+    <li><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/createAccountFields.html">createAccountFields</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/emailMustBeVerified.html">emailMustBeVerified</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/enableConnexionWithPhone.html">enableConnexionWithPhone</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/enableCreateAccount.html">enableCreateAccount</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/enableForgotPassword.html">enableForgotPassword</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/enableNoConnexion.html">enableNoConnexion</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/enableProfilButtonInPhone.html">enableProfilButtonInPhone</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/loginCustomPage.html">loginCustomPage</a></li>
+    <li><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/loginFields.html">loginFields</a></li>
+    <li><a class="deprecated" href="../skeleton_kosmos/AppConfigModel/loginWithPhoneFields.html">loginWithPhoneFields</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/logoOnAuthenticationPage.html">logoOnAuthenticationPage</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/mobileAppBarBuilder.html">mobileAppBarBuilder</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/navigationItems.html">navigationItems</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/onTapProfilButton.html">onTapProfilButton</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/profilButtonHavePicture.html">profilButtonHavePicture</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/settingsNodes.html">settingsNodes</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/showAppBarOnMobile.html">showAppBarOnMobile</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/showAppBarOnWeb.html">showAppBarOnWeb</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/showBottomBarOnWeb.html">showBottomBarOnWeb</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/showSideBarOrDrawerOnWeb.html">showSideBarOrDrawerOnWeb</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/showUserImageOnSettings.html">showUserImageOnSettings</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/typeOfLogin.html">typeOfLogin</a></li>
+    <li><a href="../skeleton_kosmos/AppConfigModel/whereNavigationItem.html">whereNavigationItem</a></li>
+
+    <li class="section-title inherited"><a href="../skeleton_kosmos/AppConfigModel-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../skeleton_kosmos/AppConfigModel-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    skeleton_kosmos
+      3.2.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

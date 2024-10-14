@@ -1,0 +1,42 @@
+dartdoc:
+  categories:
+    "Core":
+      markdown: doc/core.md
+      name: Core
+    "Model":
+      markdown: doc/model.md
+      name: Model
+    "Widget":
+      markdown: doc/widget.md
+      name: Widget
+    "Page":
+      markdown: doc/page.md
+      name: Page
+    "Theme":
+      markdown: doc/theme.md
+      name: Theme
+    "Provider":
+      markdown: doc/provider.md
+      name: Provider
+    "Guard":
+      markdown: doc/guard.md
+      name: Guard
+    "Utils":
+      markdown: doc/other.md
+      name: Utils
+  categoryOrder: ["Core", "Model", "Widget", "Page", "Theme", "Provider", "Guard", "Utils"]
+  # examplePathPrefix: 'subdir/with/examples'
+  # includeExternal: ['bin/unusually_located_library.dart']
+  # nodoc: ['lib/src/guards/']
+  # linkTo:
+  #   url: "https://my.dartdocumentationsite.org/dev/%v%"
+  showUndocumentedCategories: true
+  ignore:
+    - ambiguous-doc-reference
+  errors:
+    - unresolved-doc-reference
+  warnings:
+    - tool-error
+  favicon: "doc/images/kosmos-logo.png"
+  # footer:
+  # footerText:

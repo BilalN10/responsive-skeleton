@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 5.1.0-dev">
+  <meta name="description" content="skeleton_kosmos API docs, for the Dart programming language.">
+  <title>skeleton_kosmos - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">skeleton_kosmos package</li>
+  </ol>
+  <div class="self-name">skeleton_kosmos</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <p>#deploy token</p>
+<pre class="language-yaml"><code class="language-yaml">deploy token: gitlab+deploy-token-1159050
+password: rz2ULXhKXbxtkPw6DxEa
+</code></pre>
+<h1 id="initialiser-un-nouveau-projet">Initialiser un nouveau projet.</h1>
+<hr>
+<h5 id="tape-1-initialiser-lapplication">Étape 1: <em>Initialiser l'application</em></h5>
+<p>For information about how to write a good package README, see the guide for
+<a href="https://dart.dev/guides/libraries/writing-package-pages">writing package pages</a>.</p>
+<p>For general information about developing packages, see the Dart guide for
+<a href="https://dart.dev/guides/libraries/create-library-packages">creating packages</a>
+and the Flutter guide for
+<a href="https://flutter.dev/developing-packages">developing packages and plugins</a>. 
+--&gt;</p>
+<p>TODO: Put a short description of the package here that helps potential users
+know whether this package might be useful for them.</p>
+<h2 id="features">Features</h2>
+<p>TODO: List what your package can do. Maybe include images, gifs, or videos.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>TODO: List prerequisites and provide or point to information on how to
+start using the package.</p>
+<h2 id="usage">Usage</h2>
+<p>TODO: Include short and useful examples for package users. Add longer examples
+to <code>/example</code> folder.</p>
+<pre class="language-dart"><code class="language-dart">const like = 'sample';
+</code></pre>
+<h2 id="additional-information">Additional information</h2>
+<h2 id="appmodel--applicationdatamodel">appModel = ApplicationDataModel</h2>
+<p>Comme dit précédement, <code>appModel</code> va contenir toutes nos configurations, de Front-End jusqu'à Firebase / Stripe.</p>
+<hr>
+<h4 id="main-application-data">Main Application Data</h4>
+<p>2 champs sont obligatoires pour la configuration:</p>
+<pre class="language-dart"><code>final appModel = ApplicationDataModel(
+    appLogo: "svg/example_logo.svg", // path vers le logo (/!\ fichier SVG uniquement)
+
+    appTitle: "Example App", // Nom de l'application (équivalent de la balise &lt;title&gt; en HTML)
+);
+</code></pre>
+<hr>
+<h4 id="firebase">Firebase</h4>
+<pre class="language-dart"><code>final appModel = ApplicationDataModel(
+    ...,
+    firebaseIsEnabled: true, // true par défaut
+    
+    firebaseOptions: const FirebaseOptions(...), // objet Firebase options 
+    // contenant tous les identifians nécéssaires à la configuration / connexion Firebase.
+    
+    userCollection: "users/", // Nom de la collection où les utilisateurs sont stockés
+    // "users/" par défaut.
+
+    firebaseMessagingIsEnabled: true, // true par défaut, Si FirebaseMessaging est utilisé 
+    // dans le projet
+);
+</code></pre>
+<hr>
+<h4 id="responsive">Responsive</h4>
+<p>Les champs ci dessous permettent de définir les breakpoints au builder Responsive.</p>
+<pre class="language-dart"><code>final appModel = ApplicationDataModel(
+    ...,
+    maxPhoneWidth: 800, // 800 par défaut
+
+    maxTabletWidth: 1200, // 1200 par défaut
+
+    maxWebWidth: 2400, // 2400 par défaut
+
+    maxWidth: double.infinity, // double.infinity par défaut
+    // sert pour la taille décran maximum. Si jamais la valeur n'est pas double.infinity et
+    // l'écran est plus large, vous aurez 1 bande blanche (par défaut) de chaque côté.
+);
+</code></pre>
+<hr>
+<h4 id="autres">Autres</h4>
+<p>Plusieurs autres champs de configurations sont disponibles dans le <code>ApplicationDataModel</code>,
+n'hésitez pas à regarder le code, celui-ci est aussi documenter.</p>
+<h2 id="-important"><em><strong>/!\ Important</strong></em></h2>
+<h5 id="afin-davoir-le-projet-correctement-initialiser-pensez--modifier-le-le-webfaviconpngavec-licone-de-votre-projet-ainsi-que-toutes-les-cls-dapi-gmap-stripe-firebase--soient-correctement-instancier">Afin d'avoir le projet correctement initialiser, pensez à modifier le le <code>web/favicon.png</code>avec l'icone de votre projet, ainsi que <strong>toutes les clés d'API (GMap, Stripe, Firebase, ..)</strong> soient correctement instancier.</h5>
+<h5 id="tape-2-initialiser-firebase--back-end">Étape 2: <em>Initialiser Firebase / Back-End</em></h5>
+<p>Afin de configurer le back office, soyez sur que vous avez le CLI de firebase d'installé sur votre machine.</p>
+<p>Vous devez d'abord vous connecter au firebase de votre projet en utilisant la commande:</p>
+<pre class="language-dart"><code>firebase login
+</code></pre>
+<p>Initialiser votre projet avec Cloud Functions puis ajoutez les cloud functions présentes dans le projet <code>Responsive-Skeleton-Web/Firebase/functions/</code>.</p>
+<p>Avant de deploy vos fonctions vous devez configuré les clé et authorisations des fonctions.</p>
+<p>Voici la liste des settings existant:</p>
+<pre class="language-dart"><code>{
+  "stripe": {
+    "sec_key": "sk_test_51*****",
+    "whsec_key": "whsec_Lq*****",
+    "is_enabled": "true"
+  },
+  "sendgrid": {
+    "api_key": "SG.TZ****.dj****"
+  }
+}
+</code></pre>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="skeleton_kosmos">
+  <span class="name"><a href="skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></span> 
+
+</dt>
+<dd>How to add this package ?
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li class="self-crumb">skeleton_kosmos package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">skeleton_kosmos</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Topics</li>
+        <li><a href="topics/Core-topic.html">Core</a></li>
+        <li><a href="topics/Model-topic.html">Model</a></li>
+        <li><a href="topics/Widget-topic.html">Widget</a></li>
+        <li><a href="topics/Page-topic.html">Page</a></li>
+        <li><a href="topics/Theme-topic.html">Theme</a></li>
+        <li><a href="topics/Provider-topic.html">Provider</a></li>
+        <li><a href="topics/Guard-topic.html">Guard</a></li>
+        <li><a href="topics/Utils-topic.html">Utils</a></li>
+      <li class="section-title">Libraries</li>
+      <li><a href="skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    skeleton_kosmos
+      3.2.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

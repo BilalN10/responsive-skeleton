@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="skeleton_kosmos library API docs, for the Dart programming language.">
+  <title>skeleton_kosmos library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">skeleton_kosmos</a></li>
+    <li class="self-crumb">skeleton_kosmos library</li>
+  </ol>
+  <div class="self-name">skeleton_kosmos</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-library">skeleton_kosmos</span> library 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>How to add this package ?</p>
+<pre class="language-yaml"><code class="language-yaml">skeleton_kosmos:
+  git:
+    url: https://gitlab+deploy-token-1159050:rz2ULXhKXbxtkPw6DxEa@gitlab.com/package16/package-form-generator.git
+    ref: v3_3_0
+</code></pre>
+</section>
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="AlreadyLoggedGuard">
+  <span class="name "><a href="../skeleton_kosmos/AlreadyLoggedGuard-class.html">AlreadyLoggedGuard</a></span> 
+    <span class="category guard cp-6 linked" title="This is part of the Guard Topic."><a href="../topics/Guard-topic.html">Guard</a></span>
+
+</dt>
+<dd>
+  Check if User is already logged in. If yes, then navigate to <code>mainRoute</code>.
+</dd>
+
+        <dt id="AppConfigModel">
+  <span class="name "><a href="../skeleton_kosmos/AppConfigModel-class.html">AppConfigModel</a></span> 
+    <span class="category model cp-1 linked" title="This is part of the Model Topic."><a href="../topics/Model-topic.html">Model</a></span>
+
+</dt>
+<dd>
+  Contient les configurations nécessaires pour l'interface du skeleton.
+</dd>
+
+        <dt id="ApplicationDataModel">
+  <span class="name "><a href="../skeleton_kosmos/ApplicationDataModel-class.html">ApplicationDataModel</a><span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></span>&gt;</span></span> 
+    <span class="category model cp-1 linked" title="This is part of the Model Topic."><a href="../topics/Model-topic.html">Model</a></span>
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="AuthenticationPageThemeData">
+  <span class="name "><a href="../skeleton_kosmos/AuthenticationPageThemeData-class.html">AuthenticationPageThemeData</a></span> 
+    <span class="category theme cp-4 linked" title="This is part of the Theme Topic."><a href="../topics/Theme-topic.html">Theme</a></span>
+
+</dt>
+<dd>
+  This class is used to create a <a href="https://api.flutter.dev/flutter/material/ThemeData-class.html">ThemeData</a> for the <code>AuthenticationPage</code> (login, create account, login with phone, ...).
+</dd>
+
+        <dt id="BasicWebParentPage">
+  <span class="name "><a href="../skeleton_kosmos/BasicWebParentPage-class.html">BasicWebParentPage</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+
+</dt>
+<dd>
+  Widget par défaut, permet d'instancier une page de largeur maximum et d'ajouter la sidebar (uniquement si <a href="../skeleton_kosmos/AppConfigModel/showSideBarOrDrawerOnWeb.html">AppConfigModel.showSideBarOrDrawerOnWeb</a> est à true)
+</dd>
+
+        <dt id="CgvuPage">
+  <span class="name "><a href="../skeleton_kosmos/CgvuPage-class.html">CgvuPage</a></span> 
+    <span class="category core cp-0 linked" title="This is part of the Core Topic."><a href="../topics/Core-topic.html">Core</a></span>
+    <span class="category page cp-3 linked" title="This is part of the Page Topic."><a href="../topics/Page-topic.html">Page</a></span>
+
+</dt>
+<dd>
+  Page Template montrant les CGU et demandant à l'utilisateur de les accepter. (uniquement en Web)
+</dd>
+
+        <dt id="ClampingPage">
+  <span class="name "><a href="../skeleton_kosmos/ClampingPage-class.html">ClampingPage</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+    <span class="category page cp-3 linked" title="This is part of the Page Topic."><a href="../topics/Page-topic.html">Page</a></span>
+
+</dt>
+<dd>
+  Widget parent créant une page de taille fixe (MediaQuery), à mettre avant votre page, pour gérer les différentes fonctionnalités de vote interface.
+Va générer automatiquement la bottom bar et la sidebar.
+</dd>
+
+        <dt id="CompleteProfilPopup">
+  <span class="name "><a href="../skeleton_kosmos/CompleteProfilPopup-class.html">CompleteProfilPopup</a></span> 
+    <span class="category core cp-0 linked" title="This is part of the Core Topic."><a href="../topics/Core-topic.html">Core</a></span>
+    <span class="category page cp-3 linked" title="This is part of the Page Topic."><a href="../topics/Page-topic.html">Page</a></span>
+
+</dt>
+<dd>
+  Template affichant une popup permettant à l'utilisateur de compléter son profil.
+</dd>
+
+        <dt id="CreateAccountPage">
+  <span class="name "><a href="../skeleton_kosmos/CreateAccountPage-class.html">CreateAccountPage</a></span> 
+    <span class="category core cp-0 linked" title="This is part of the Core Topic."><a href="../topics/Core-topic.html">Core</a></span>
+    <span class="category page cp-3 linked" title="This is part of the Page Topic."><a href="../topics/Page-topic.html">Page</a></span>
+
+</dt>
+<dd>
+  Template affichant une page permettant de créer son profil.
+</dd>
+
+        <dt id="CreateAccountProvider">
+  <span class="name "><a href="../skeleton_kosmos/CreateAccountProvider-class.html">CreateAccountProvider</a></span> 
+    <span class="category provides cp-8" title="This is part of the Provides Topic.">Provides</span>
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="CustomCard">
+  <span class="name "><a href="../skeleton_kosmos/CustomCard-class.html">CustomCard</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+
+</dt>
+<dd>
+  Créer une card (Équivalent de <a href="https://api.flutter.dev/flutter/material/Card-class.html">Card</a> de flutter) avec un style personnalisé et entièrement customisable.
+</dd>
+
+        <dt id="CustomCardThemeData">
+  <span class="name "><a href="../skeleton_kosmos/CustomCardThemeData-class.html">CustomCardThemeData</a></span> 
+    <span class="category theme cp-4 linked" title="This is part of the Theme Topic."><a href="../topics/Theme-topic.html">Theme</a></span>
+
+</dt>
+<dd>
+  Theme of the <a href="../skeleton_kosmos/CustomCard-class.html">CustomCard</a> Widget.
+</dd>
+
+        <dt id="CustomExpansionPanelList">
+  <span class="name "><a href="../skeleton_kosmos/CustomExpansionPanelList-class.html">CustomExpansionPanelList</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+
+</dt>
+<dd>
+  Widget de liste déroulante
+</dd>
+
+        <dt id="CustomExpansionPanelListThemeData">
+  <span class="name "><a href="../skeleton_kosmos/CustomExpansionPanelListThemeData-class.html">CustomExpansionPanelListThemeData</a></span> 
+    <span class="category theme cp-4 linked" title="This is part of the Theme Topic."><a href="../topics/Theme-topic.html">Theme</a></span>
+
+</dt>
+<dd>
+  Theme of <a href="../skeleton_kosmos/CustomExpansionPanelList-class.html">CustomExpansionPanelList</a>
+</dd>
+
+        <dt id="DashboardPage">
+  <span class="name "><a href="../skeleton_kosmos/DashboardPage-class.html">DashboardPage</a></span> 
+    <span class="category core cp-0 linked" title="This is part of the Core Topic."><a href="../topics/Core-topic.html">Core</a></span>
+
+</dt>
+<dd>
+  Page principal du skeleton, gère toutes les pages de l'application.
+peut être modifié pour ajouter des pages depuis le AppRouter.
+</dd>
+
+        <dt id="DashboardProvider">
+  <span class="name "><a href="../skeleton_kosmos/DashboardProvider-class.html">DashboardProvider</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="FirestoreUtils">
+  <span class="name "><a href="../skeleton_kosmos/FirestoreUtils-class.html">FirestoreUtils</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="ForgotPasswordPage">
+  <span class="name "><a href="../skeleton_kosmos/ForgotPasswordPage-class.html">ForgotPasswordPage</a></span> 
+    <span class="category core cp-0 linked" title="This is part of the Core Topic."><a href="../topics/Core-topic.html">Core</a></span>
+    <span class="category page cp-3 linked" title="This is part of the Page Topic."><a href="../topics/Page-topic.html">Page</a></span>
+
+</dt>
+<dd>
+  Page template pour changer son mot de passe.
+</dd>
+
+        <dt id="ImageWithSmartFormat">
+  <span class="name "><a href="../skeleton_kosmos/ImageWithSmartFormat-class.html">ImageWithSmartFormat</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+
+</dt>
+<dd>
+  Créer automatiquement une image avec le type demandé. Si l'image est un url internet, ajout automatique du cache.
+</dd>
+
+        <dt id="ItemLinkHelper">
+  <span class="name "><a href="../skeleton_kosmos/ItemLinkHelper-class.html">ItemLinkHelper</a></span> 
+    <span class="category utils cp-7 linked" title="This is part of the Utils Topic."><a href="../topics/Utils-topic.html">Utils</a></span>
+
+</dt>
+<dd>
+  Class helper to manage link handler
+</dd>
+
+        <dt id="LaunchApplication">
+  <span class="name "><a href="../skeleton_kosmos/LaunchApplication-class.html">LaunchApplication</a></span> 
+    <span class="category core cp-0 linked" title="This is part of the Core Topic."><a href="../topics/Core-topic.html">Core</a></span>
+
+</dt>
+<dd>
+  Point d'entrée de l'application.
+Cette classe est responsable de l'initialisation de l'application.
+Elle est responsable de l'initialisation des services de l'application et du lancement en fonction de la platforme (IOS / Android ou Web).
+</dd>
+
+        <dt id="LinkItem">
+  <span class="name "><a href="../skeleton_kosmos/LinkItem-class.html">LinkItem</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="LinkItemModel">
+  <span class="name "><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="LinkItemThemeData">
+  <span class="name "><a href="../skeleton_kosmos/LinkItemThemeData-class.html">LinkItemThemeData</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="LoginGuard">
+  <span class="name "><a href="../skeleton_kosmos/LoginGuard-class.html">LoginGuard</a></span> 
+    <span class="category guard cp-6 linked" title="This is part of the Guard Topic."><a href="../topics/Guard-topic.html">Guard</a></span>
+
+</dt>
+<dd>
+  Check if User is already logged in. If not, redirect to Login Page.
+</dd>
+
+        <dt id="LoginPage">
+  <span class="name "><a href="../skeleton_kosmos/LoginPage-class.html">LoginPage</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="LoginWithPhonePage">
+  <span class="name "><a href="../skeleton_kosmos/LoginWithPhonePage-class.html">LoginWithPhonePage</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="LogoutGuard">
+  <span class="name "><a href="../skeleton_kosmos/LogoutGuard-class.html">LogoutGuard</a></span> 
+    <span class="category guard cp-6 linked" title="This is part of the Guard Topic."><a href="../topics/Guard-topic.html">Guard</a></span>
+
+</dt>
+<dd>
+  Check if User is already logged in. If yes, signOut him and redirect to <code>loginRoute</code>.
+</dd>
+
+        <dt id="LogoutPage">
+  <span class="name "><a href="../skeleton_kosmos/LogoutPage-class.html">LogoutPage</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="ModifyEmailDataNode">
+  <span class="name "><a href="../skeleton_kosmos/ModifyEmailDataNode-class.html">ModifyEmailDataNode</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="ModifyPasswordDataNode">
+  <span class="name "><a href="../skeleton_kosmos/ModifyPasswordDataNode-class.html">ModifyPasswordDataNode</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="ModifyPersonnalDataNode">
+  <span class="name "><a href="../skeleton_kosmos/ModifyPersonnalDataNode-class.html">ModifyPersonnalDataNode</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="NavigationSidebarThemeData">
+  <span class="name "><a href="../skeleton_kosmos/NavigationSidebarThemeData-class.html">NavigationSidebarThemeData</a></span> 
+    <span class="category theme cp-4 linked" title="This is part of the Theme Topic."><a href="../topics/Theme-topic.html">Theme</a></span>
+
+</dt>
+<dd>
+  Theme of the SideBar.
+</dd>
+
+        <dt id="OpenableContainer">
+  <span class="name "><a href="../skeleton_kosmos/OpenableContainer-class.html">OpenableContainer</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="PrincipalData">
+  <span class="name "><a href="../skeleton_kosmos/PrincipalData-class.html">PrincipalData</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="ProfilButtonThemeData">
+  <span class="name "><a href="../skeleton_kosmos/ProfilButtonThemeData-class.html">ProfilButtonThemeData</a></span> 
+    <span class="category theme cp-4 linked" title="This is part of the Theme Topic."><a href="../topics/Theme-topic.html">Theme</a></span>
+
+</dt>
+<dd>
+  Theme of the <code>ProfilButton</code> Widget.
+</dd>
+
+        <dt id="ProfilePage">
+  <span class="name "><a href="../skeleton_kosmos/ProfilePage-class.html">ProfilePage</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="ResponsiveAppBar">
+  <span class="name "><a href="../skeleton_kosmos/ResponsiveAppBar-class.html">ResponsiveAppBar</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+
+</dt>
+<dd>
+  Créer une AppBar avec un bouton de profil et les boutons de navigation (uniquement si configuré dans ApplicationModel).
+</dd>
+
+        <dt id="ResponsiveAppBarThemeData">
+  <span class="name "><a href="../skeleton_kosmos/ResponsiveAppBarThemeData-class.html">ResponsiveAppBarThemeData</a></span> 
+    <span class="category theme cp-4 linked" title="This is part of the Theme Topic."><a href="../topics/Theme-topic.html">Theme</a></span>
+
+</dt>
+<dd>
+  Theme of the <a href="../skeleton_kosmos/ResponsiveAppBar-class.html">ResponsiveAppBar</a> Widget.
+Used for appBar and bottomBar.
+</dd>
+
+        <dt id="ResponsiveSettingsPage">
+  <span class="name "><a href="../skeleton_kosmos/ResponsiveSettingsPage-class.html">ResponsiveSettingsPage</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="ScaffoldWithLogo">
+  <span class="name "><a href="../skeleton_kosmos/ScaffoldWithLogo-class.html">ScaffoldWithLogo</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+
+</dt>
+<dd>
+  Widget créant un scaffold avec le logo de l'application (path défini dans <code>ApplicationModel</code>).
+Le logo est centré dans le cas d'une taille d'écran inférieur à une tablette ou dans une application mobile.
+Sinon, il est par défaut positionner en <a href="https://api.flutter.dev/flutter/painting/Alignment/topLeft-constant.html">Alignment.topLeft</a>
+</dd>
+
+        <dt id="ScrollingPage">
+  <span class="name "><a href="../skeleton_kosmos/ScrollingPage-class.html">ScrollingPage</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+    <span class="category page cp-3 linked" title="This is part of the Page Topic."><a href="../topics/Page-topic.html">Page</a></span>
+
+</dt>
+<dd>
+  Widget parent permettant un scrolling par défaut, à mettre avant votre page, pour gérer les différentes fonctionnalités de vote interface.
+Va générer automatiquement la bottom bar et la sidebar.
+</dd>
+
+        <dt id="SettingsNode">
+  <span class="name "><a href="../skeleton_kosmos/SettingsNode-class.html">SettingsNode</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="SettingsPage">
+  <span class="name "><a href="../skeleton_kosmos/SettingsPage-class.html">SettingsPage</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="SwicthNotifEmail">
+  <span class="name "><a href="../skeleton_kosmos/SwicthNotifEmail-class.html">SwicthNotifEmail</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="SwicthNotifPush">
+  <span class="name "><a href="../skeleton_kosmos/SwicthNotifPush-class.html">SwicthNotifPush</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="SwicthNotifSms">
+  <span class="name "><a href="../skeleton_kosmos/SwicthNotifSms-class.html">SwicthNotifSms</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="UserModel">
+  <span class="name "><a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></span> 
+    <span class="category model cp-1 linked" title="This is part of the Model Topic."><a href="../topics/Model-topic.html">Model</a></span>
+
+</dt>
+<dd>
+  <a href="../skeleton_kosmos/UserModel-class.html">UserModel</a> contient toutes les informations utilisateurs que les applications ont besoin par défaut.
+Si vous avez besoin de plus de champs, vous pouvez créer votre propre model héritant de <a href="../skeleton_kosmos/UserModel-class.html">UserModel</a> et l'importer dans votre projet.
+</dd>
+
+        <dt id="UserProvider">
+  <span class="name "><a href="../skeleton_kosmos/UserProvider-class.html">UserProvider</a><span class="signature">&lt;<wbr><span class="type-parameter">U extends <a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></span>&gt;</span></span> 
+    <span class="category provider cp-5 linked" title="This is part of the Provider Topic."><a href="../topics/Provider-topic.html">Provider</a></span>
+
+</dt>
+<dd>
+  Provider stockant les données de l'utilisateur.
+Permet de récupérer les données de l'utilisateur en temps réel, avec n'importe quel type d'utilisateur du moment que votre
+class extends de <a href="../skeleton_kosmos/UserModel-class.html">UserModel</a>.
+</dd>
+
+        <dt id="VerificationEmailSendPage">
+  <span class="name "><a href="../skeleton_kosmos/VerificationEmailSendPage-class.html">VerificationEmailSendPage</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="WebParentCore">
+  <span class="name "><a href="../skeleton_kosmos/WebParentCore-class.html">WebParentCore</a></span> 
+    <span class="category widget cp-2 linked" title="This is part of the Widget Topic."><a href="../topics/Widget-topic.html">Widget</a></span>
+
+</dt>
+<dd>
+  Class contenant les différentes méthodes de création d'interface.
+(Ex. buildBottomBar =&gt; bottomBar si active dans le model, buildLeftSideBar =&gt; sideBar, contenant les liens de navigation, si active dans le model)
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="userChangeNotifierProvider" class="property">
+  <span class="name"><a href="../skeleton_kosmos/userChangeNotifierProvider.html">userChangeNotifierProvider</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/ChangeNotifierProvider-class.html">ChangeNotifierProvider</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/UserProvider-class.html">UserProvider</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></span>&gt;</span></span>&gt;</span></span> 
+    <span class="category provider cp-5 linked" title="This is part of the Provider Topic."><a href="../topics/Provider-topic.html">Provider</a></span>
+
+</dt>
+<dd>
+  UserData Provider
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="enums">
+      <h2>Enums</h2>
+
+      <dl>
+        <dt id="LoginType">
+  <span class="name "><a href="../skeleton_kosmos/LoginType.html">LoginType</a></span> 
+
+</dt>
+<dd>
+  Different way to connect with default <a href="../skeleton_kosmos/LoginPage-class.html">LoginPage</a>
+</dd>
+
+        <dt id="NavigationPosition">
+  <span class="name "><a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition</a></span> 
+
+</dt>
+<dd>
+  Diffenret Positions of the <a href="../skeleton_kosmos/LinkItem-class.html">LinkItem</a> in the whole app.
+</dd>
+
+        <dt id="SettingsNodeType">
+  <span class="name "><a href="../skeleton_kosmos/SettingsNodeType.html">SettingsNodeType</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+        <dt id="SmartImageType">
+  <span class="name "><a href="../skeleton_kosmos/SmartImageType.html">SmartImageType</a></span> 
+
+</dt>
+<dd>
+  Différents type d'image possible pour le Widget <a href="../skeleton_kosmos/ImageWithSmartFormat-class.html">ImageWithSmartFormat</a>
+</dd>
+
+      </dl>
+    </section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">skeleton_kosmos</a></li>
+  <li class="self-crumb">skeleton_kosmos library</li>
+</ol>
+
+
+    <h5><span class="package-name">skeleton_kosmos</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Topics</li>
+        <li><a href="../topics/Core-topic.html">Core</a></li>
+        <li><a href="../topics/Model-topic.html">Model</a></li>
+        <li><a href="../topics/Widget-topic.html">Widget</a></li>
+        <li><a href="../topics/Page-topic.html">Page</a></li>
+        <li><a href="../topics/Theme-topic.html">Theme</a></li>
+        <li><a href="../topics/Provider-topic.html">Provider</a></li>
+        <li><a href="../topics/Guard-topic.html">Guard</a></li>
+        <li><a href="../topics/Utils-topic.html">Utils</a></li>
+      <li class="section-title">Libraries</li>
+      <li><a href="../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>skeleton_kosmos library</h5>
+    <ol>
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#classes">Classes</a></li>
+  <li><a href="../skeleton_kosmos/AlreadyLoggedGuard-class.html">AlreadyLoggedGuard</a></li>
+  <li><a href="../skeleton_kosmos/AppConfigModel-class.html">AppConfigModel</a></li>
+  <li><a href="../skeleton_kosmos/ApplicationDataModel-class.html">ApplicationDataModel</a></li>
+  <li><a href="../skeleton_kosmos/AuthenticationPageThemeData-class.html">AuthenticationPageThemeData</a></li>
+  <li><a href="../skeleton_kosmos/BasicWebParentPage-class.html">BasicWebParentPage</a></li>
+  <li><a href="../skeleton_kosmos/CgvuPage-class.html">CgvuPage</a></li>
+  <li><a href="../skeleton_kosmos/ClampingPage-class.html">ClampingPage</a></li>
+  <li><a href="../skeleton_kosmos/CompleteProfilPopup-class.html">CompleteProfilPopup</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountPage-class.html">CreateAccountPage</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountProvider-class.html">CreateAccountProvider</a></li>
+  <li><a href="../skeleton_kosmos/CustomCard-class.html">CustomCard</a></li>
+  <li><a href="../skeleton_kosmos/CustomCardThemeData-class.html">CustomCardThemeData</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelList-class.html">CustomExpansionPanelList</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelListThemeData-class.html">CustomExpansionPanelListThemeData</a></li>
+  <li><a href="../skeleton_kosmos/DashboardPage-class.html">DashboardPage</a></li>
+  <li><a href="../skeleton_kosmos/DashboardProvider-class.html">DashboardProvider</a></li>
+  <li><a href="../skeleton_kosmos/FirestoreUtils-class.html">FirestoreUtils</a></li>
+  <li><a href="../skeleton_kosmos/ForgotPasswordPage-class.html">ForgotPasswordPage</a></li>
+  <li><a href="../skeleton_kosmos/ImageWithSmartFormat-class.html">ImageWithSmartFormat</a></li>
+  <li><a href="../skeleton_kosmos/ItemLinkHelper-class.html">ItemLinkHelper</a></li>
+  <li><a href="../skeleton_kosmos/LaunchApplication-class.html">LaunchApplication</a></li>
+  <li><a href="../skeleton_kosmos/LinkItem-class.html">LinkItem</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemThemeData-class.html">LinkItemThemeData</a></li>
+  <li><a href="../skeleton_kosmos/LoginGuard-class.html">LoginGuard</a></li>
+  <li><a href="../skeleton_kosmos/LoginPage-class.html">LoginPage</a></li>
+  <li><a href="../skeleton_kosmos/LoginWithPhonePage-class.html">LoginWithPhonePage</a></li>
+  <li><a href="../skeleton_kosmos/LogoutGuard-class.html">LogoutGuard</a></li>
+  <li><a href="../skeleton_kosmos/LogoutPage-class.html">LogoutPage</a></li>
+  <li><a href="../skeleton_kosmos/ModifyEmailDataNode-class.html">ModifyEmailDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPasswordDataNode-class.html">ModifyPasswordDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPersonnalDataNode-class.html">ModifyPersonnalDataNode</a></li>
+  <li><a href="../skeleton_kosmos/NavigationSidebarThemeData-class.html">NavigationSidebarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/OpenableContainer-class.html">OpenableContainer</a></li>
+  <li><a href="../skeleton_kosmos/PrincipalData-class.html">PrincipalData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilButtonThemeData-class.html">ProfilButtonThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilePage-class.html">ProfilePage</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBar-class.html">ResponsiveAppBar</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBarThemeData-class.html">ResponsiveAppBarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveSettingsPage-class.html">ResponsiveSettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/ScaffoldWithLogo-class.html">ScaffoldWithLogo</a></li>
+  <li><a href="../skeleton_kosmos/ScrollingPage-class.html">ScrollingPage</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNode-class.html">SettingsNode</a></li>
+  <li><a href="../skeleton_kosmos/SettingsPage-class.html">SettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifEmail-class.html">SwicthNotifEmail</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifPush-class.html">SwicthNotifPush</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifSms-class.html">SwicthNotifSms</a></li>
+  <li><a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></li>
+  <li><a href="../skeleton_kosmos/UserProvider-class.html">UserProvider</a></li>
+  <li><a href="../skeleton_kosmos/VerificationEmailSendPage-class.html">VerificationEmailSendPage</a></li>
+  <li><a href="../skeleton_kosmos/WebParentCore-class.html">WebParentCore</a></li>
+
+
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#properties">Properties</a></li>
+  <li><a href="../skeleton_kosmos/userChangeNotifierProvider.html">userChangeNotifierProvider</a></li>
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#enums">Enums</a></li>
+  <li><a href="../skeleton_kosmos/LoginType.html">LoginType</a></li>
+  <li><a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNodeType.html">SettingsNodeType</a></li>
+  <li><a href="../skeleton_kosmos/SmartImageType.html">SmartImageType</a></li>
+
+
+</ol>
+
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    skeleton_kosmos
+      3.2.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

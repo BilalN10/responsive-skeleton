@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the userChangeNotifierProvider property from the skeleton_kosmos library, for the Dart programming language.">
+  <title>userChangeNotifierProvider property - skeleton_kosmos library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">skeleton_kosmos</a></li>
+    <li><a href="../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+    <li class="self-crumb">userChangeNotifierProvider property</li>
+  </ol>
+  <div class="self-name">userChangeNotifierProvider</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">userChangeNotifierProvider</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+    <span class="category provider cp-5 linked" title="This is part of the Provider Topic."><a href="../topics/Provider-topic.html">Provider</a></span>
+</h1></div>
+
+        <section class="multi-line-signature">
+          <a href="https://pub.dev/documentation/flutter_riverpod/1.0.4/flutter_riverpod/ChangeNotifierProvider-class.html">ChangeNotifierProvider</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/UserProvider-class.html">UserProvider</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></span>&gt;</span></span>&gt;</span>
+          <span class="name ">userChangeNotifierProvider</span>
+          <div class="features">final</div>
+
+        </section>
+        
+<section class="desc markdown">
+  <p>UserData Provider</p>
+<p>{@category Provider}</p>
+</section>
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final userChangeNotifierProvider = ChangeNotifierProvider&lt;UserProvider&gt;((ref) {
+  return UserProvider(ref, &quot;users&#47;&quot;, GetIt.instance&lt;ApplicationDataModel&gt;().userConstructorProvider);
+});</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">skeleton_kosmos</a></li>
+  <li><a href="../skeleton_kosmos/skeleton_kosmos-library.html">skeleton_kosmos</a></li>
+  <li class="self-crumb">userChangeNotifierProvider property</li>
+</ol>
+
+
+    <h5>skeleton_kosmos library</h5>
+    <ol>
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#classes">Classes</a></li>
+  <li><a href="../skeleton_kosmos/AlreadyLoggedGuard-class.html">AlreadyLoggedGuard</a></li>
+  <li><a href="../skeleton_kosmos/AppConfigModel-class.html">AppConfigModel</a></li>
+  <li><a href="../skeleton_kosmos/ApplicationDataModel-class.html">ApplicationDataModel</a></li>
+  <li><a href="../skeleton_kosmos/AuthenticationPageThemeData-class.html">AuthenticationPageThemeData</a></li>
+  <li><a href="../skeleton_kosmos/BasicWebParentPage-class.html">BasicWebParentPage</a></li>
+  <li><a href="../skeleton_kosmos/CgvuPage-class.html">CgvuPage</a></li>
+  <li><a href="../skeleton_kosmos/ClampingPage-class.html">ClampingPage</a></li>
+  <li><a href="../skeleton_kosmos/CompleteProfilPopup-class.html">CompleteProfilPopup</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountPage-class.html">CreateAccountPage</a></li>
+  <li><a href="../skeleton_kosmos/CreateAccountProvider-class.html">CreateAccountProvider</a></li>
+  <li><a href="../skeleton_kosmos/CustomCard-class.html">CustomCard</a></li>
+  <li><a href="../skeleton_kosmos/CustomCardThemeData-class.html">CustomCardThemeData</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelList-class.html">CustomExpansionPanelList</a></li>
+  <li><a href="../skeleton_kosmos/CustomExpansionPanelListThemeData-class.html">CustomExpansionPanelListThemeData</a></li>
+  <li><a href="../skeleton_kosmos/DashboardPage-class.html">DashboardPage</a></li>
+  <li><a href="../skeleton_kosmos/DashboardProvider-class.html">DashboardProvider</a></li>
+  <li><a href="../skeleton_kosmos/FirestoreUtils-class.html">FirestoreUtils</a></li>
+  <li><a href="../skeleton_kosmos/ForgotPasswordPage-class.html">ForgotPasswordPage</a></li>
+  <li><a href="../skeleton_kosmos/ImageWithSmartFormat-class.html">ImageWithSmartFormat</a></li>
+  <li><a href="../skeleton_kosmos/ItemLinkHelper-class.html">ItemLinkHelper</a></li>
+  <li><a href="../skeleton_kosmos/LaunchApplication-class.html">LaunchApplication</a></li>
+  <li><a href="../skeleton_kosmos/LinkItem-class.html">LinkItem</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemModel-class.html">LinkItemModel</a></li>
+  <li><a href="../skeleton_kosmos/LinkItemThemeData-class.html">LinkItemThemeData</a></li>
+  <li><a href="../skeleton_kosmos/LoginGuard-class.html">LoginGuard</a></li>
+  <li><a href="../skeleton_kosmos/LoginPage-class.html">LoginPage</a></li>
+  <li><a href="../skeleton_kosmos/LoginWithPhonePage-class.html">LoginWithPhonePage</a></li>
+  <li><a href="../skeleton_kosmos/LogoutGuard-class.html">LogoutGuard</a></li>
+  <li><a href="../skeleton_kosmos/LogoutPage-class.html">LogoutPage</a></li>
+  <li><a href="../skeleton_kosmos/ModifyEmailDataNode-class.html">ModifyEmailDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPasswordDataNode-class.html">ModifyPasswordDataNode</a></li>
+  <li><a href="../skeleton_kosmos/ModifyPersonnalDataNode-class.html">ModifyPersonnalDataNode</a></li>
+  <li><a href="../skeleton_kosmos/NavigationSidebarThemeData-class.html">NavigationSidebarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/OpenableContainer-class.html">OpenableContainer</a></li>
+  <li><a href="../skeleton_kosmos/PrincipalData-class.html">PrincipalData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilButtonThemeData-class.html">ProfilButtonThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ProfilePage-class.html">ProfilePage</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBar-class.html">ResponsiveAppBar</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveAppBarThemeData-class.html">ResponsiveAppBarThemeData</a></li>
+  <li><a href="../skeleton_kosmos/ResponsiveSettingsPage-class.html">ResponsiveSettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/ScaffoldWithLogo-class.html">ScaffoldWithLogo</a></li>
+  <li><a href="../skeleton_kosmos/ScrollingPage-class.html">ScrollingPage</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNode-class.html">SettingsNode</a></li>
+  <li><a href="../skeleton_kosmos/SettingsPage-class.html">SettingsPage</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifEmail-class.html">SwicthNotifEmail</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifPush-class.html">SwicthNotifPush</a></li>
+  <li><a href="../skeleton_kosmos/SwicthNotifSms-class.html">SwicthNotifSms</a></li>
+  <li><a href="../skeleton_kosmos/UserModel-class.html">UserModel</a></li>
+  <li><a href="../skeleton_kosmos/UserProvider-class.html">UserProvider</a></li>
+  <li><a href="../skeleton_kosmos/VerificationEmailSendPage-class.html">VerificationEmailSendPage</a></li>
+  <li><a href="../skeleton_kosmos/WebParentCore-class.html">WebParentCore</a></li>
+
+
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#properties">Properties</a></li>
+  <li><a href="../skeleton_kosmos/userChangeNotifierProvider.html">userChangeNotifierProvider</a></li>
+
+
+  <li class="section-title"><a href="../skeleton_kosmos/skeleton_kosmos-library.html#enums">Enums</a></li>
+  <li><a href="../skeleton_kosmos/LoginType.html">LoginType</a></li>
+  <li><a href="../skeleton_kosmos/NavigationPosition.html">NavigationPosition</a></li>
+  <li><a href="../skeleton_kosmos/SettingsNodeType.html">SettingsNodeType</a></li>
+  <li><a href="../skeleton_kosmos/SmartImageType.html">SmartImageType</a></li>
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    skeleton_kosmos
+      3.2.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
